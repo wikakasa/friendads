@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+  var imageUrls = [
+       "http://cdn.glitch.global/35fb64ff-8913-4db1-8782-aa50742d9eda/adv%201.png?v=1687118261360"
+     , "http://cdn.glitch.global/35fb64ff-8913-4db1-8782-aa50742d9eda/adv%201.png?v=1687118261360"
+     , "http://cdn.glitch.global/35fb64ff-8913-4db1-8782-aa50742d9eda/adv%201.png?v=1687118261360"
+  ];
+ var imageLinks = [
+       "http://www.stackoverflow.com"
+   , "http://cdn.glitch.global"
+      , "http://www.reforma.com"
+       , "http://www.nytimes.com/"
+      , "https://oglobo.globo.com/"
+      , "http://www.lefigaro.fr/international/"
+     , "http://www.spiegel.de/international/"    
+  ];
+
+  function getImageHtmlCode() {
+    var dataIndex = Math.floor(Math.random() * imageUrls.length);
+    var img = '<a href=\"' + imageLinks[dataIndex] + '"><img src="';        
+    img += imageUrls[dataIndex];
+    img += '\" alt=\"Advertisement\"/></a>';
+    return img;
+  }
+</script>
+</head>
+<script type="text/javascript">
+  document.write(getImageHtmlCode());
+</script>
+</body>
+</html>
