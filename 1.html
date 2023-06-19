@@ -16,7 +16,7 @@
 
   function getImageHtmlCode() {
     var dataIndex = Math.floor(Math.random() * imageUrls.length);
-    var img = '<a href="' + imageLinks[dataIndex] + '" target="_blank">< + ><img src="';        
+    var img = '<a href=" + imageLinks[dataIndex] + " target="_blank">< + ><img src="';        
     img += imageUrls[dataIndex];
     img += '\" alt=\"Advertisement\"/></a>';
     return img;
